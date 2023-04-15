@@ -8,21 +8,12 @@ ui = true
 autocorrect = 1
 [core]
 excludesFile = /Users/kos31de/.gitignore_global
-[difftool "sourcetree"]
-cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-path = 
-[mergetool "sourcetree"]
-cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-trustExitCode = true
 [alias]
-g = git
-a = add
-c = commit
+st = status
 rb = for-each-ref --count=10 --sort=-committerdate refs/heads/ --format='%(authordate:iso8601) %(refname:short)'
 rsh = reset --soft HEAD^1
 gpoh = push origin HEAD
 gpfoh = push -f origin HEAD
-st = status
 [gpg]
 program = gpg
 [pull]
